@@ -6,7 +6,7 @@ resources:
       path: pipelines61/pipelines
       
 pipelines:
-  - name: my_pipeline_name
+  - name: accenture_pipelines_working
     steps:
       - name: bash_commands
         type: Bash
