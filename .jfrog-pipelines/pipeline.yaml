@@ -1,0 +1,20 @@
+resources:
+  - name: github_scm
+    type: GitRepo
+    configuration:
+      gitProvider: github_provider
+      
+pipelines:
+  - name: my_pipeline_name
+    steps:
+      - name: bash_commands
+        type: Bash
+        configuration:
+          affinityGroup: your_group_name
+        execution:
+          onStart:
+            - echo "onstart"
+          onExecute:
+            - echo "exccute"
+          onSuccess:
+            - echo "success"
