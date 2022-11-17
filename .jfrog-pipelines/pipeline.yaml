@@ -3,6 +3,7 @@ resources:
     type: GitRepo
     configuration:
       gitProvider: github_provider
+      path: pipelines61/pipelines
       
 pipelines:
   - name: my_pipeline_name
