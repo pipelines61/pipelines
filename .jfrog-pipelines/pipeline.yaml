@@ -1,8 +1,8 @@
 resources:
-  - name: github_scm
+  - name: github_integration
     type: GitRepo
     configuration:
-      gitProvider: github_provider
+      gitProvider: github_scm
       path: pipelines61/pipelines
       
 pipelines:
